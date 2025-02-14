@@ -1,5 +1,7 @@
 package com.jobapp.companyms.company;
 
+import com.jobapp.companyms.company.dto.ReviewMessage;
+
 import java.util.List;
 
 public interface CompanyService {
@@ -11,4 +13,6 @@ public interface CompanyService {
     Company getCompanyById(Long id);
 
     boolean deleteCompany(Long id);
+
+    void updateCompanyRating(ReviewMessage reviewMessage);
 }
